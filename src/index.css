@@ -13,6 +13,72 @@ body {
   color: #0f172a;
 }
 
+html[data-theme="dark"] body {
+  background: #11111b;
+  color: #f1effa;
+}
+
+html[data-theme="oscuro"] body,
+html[data-theme="oscuro"] main {
+  background-color: #11111b !important;
+  background-image: none !important;
+  color: #f1effa !important;
+}
+
+html[data-theme="oscuro"] [class*="bg-white"],
+html[data-theme="oscuro"] [class*="bg-[#faf9ff]"],
+html[data-theme="oscuro"] [class*="bg-violet-50"],
+html[data-theme="oscuro"] [class*="bg-violet-100"],
+html[data-theme="oscuro"] [class*="bg-indigo-50"] {
+  background-color: #201e2b !important;
+}
+
+html[data-theme="oscuro"] [class*="text-slate-950"],
+html[data-theme="oscuro"] [class*="text-slate-900"],
+html[data-theme="oscuro"] [class*="text-slate-800"],
+html[data-theme="oscuro"] [class*="text-slate-700"],
+html[data-theme="oscuro"] [class*="text-slate-600"],
+html[data-theme="oscuro"] [class*="text-violet-950"] {
+  color: #f1effa !important;
+}
+
+html[data-theme="oscuro"] [class*="border-violet-"],
+html[data-theme="oscuro"] [class*="divide-violet-"] {
+  border-color: #393448 !important;
+}
+
+html[data-theme="oscuro"] input:not([type="checkbox"]),
+html[data-theme="oscuro"] select {
+  background-color: #201e2b;
+  color: #f1effa;
+  border-color: #514a62;
+}
+
+html[data-theme="oscuro"] input::placeholder {
+  color: #aaa3b8;
+}
+
+html[data-theme="oscuro"] button.fixed {
+  background-color: #201e2b !important;
+  color: #ddd5ff !important;
+  border-color: #514a62 !important;
+}
+
+html[data-theme="oscuro"] table thead,
+html[data-theme="oscuro"] table tbody tr:hover {
+  background-color: #272432 !important;
+}
+
+html[data-theme="oscuro"] main > header {
+  background-color: rgb(32 30 43 / 92%) !important;
+}
+
+html[data-theme="oscuro"] main section article,
+html[data-theme="oscuro"] main form,
+html[data-theme="oscuro"] main [class*="rounded-3xl"][class*="bg-white"] {
+  background-color: #201e2b !important;
+}
+
 button,
 input {
   font: inherit;
